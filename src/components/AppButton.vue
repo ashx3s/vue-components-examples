@@ -5,7 +5,7 @@ defineProps({
 })
 </script>
 <template>
-  <a :href="href"><span>{{ text }}</span></a>
+  <a :href="href"><span> <slot></slot></span></a>
 </template>
 <style scoped>
 a {
@@ -13,7 +13,6 @@ a {
   height: 220px; 
   background-color: #fff3ff;
   display: grid;
-  text-align: center;
   place-items: center;
   border-radius: 50%;
 }

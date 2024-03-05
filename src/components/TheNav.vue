@@ -12,7 +12,6 @@ const links = [
     href: "https://vuejs.org",
     text: "Shop"
   }
- x
 ]
 </script>
 <template>
@@ -21,7 +20,7 @@ const links = [
       Logo
     </div>
     <ul>
-      <li v-for="{href, text} in links :key={text}"><a :href>{{ text }}</a></li>
+      <li v-for="{href, text} in links "><a :href>{{ text }}</a></li>
     </ul>
   </nav>
   <div>

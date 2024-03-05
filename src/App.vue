@@ -1,4 +1,6 @@
 <script setup>
+import TheNav from './components/TheNav.vue'
+import TheFooter from './components/TheFooter.vue'
 import AppButtonLayout from './components/AppButtonLayout.vue'
 import AppFlexLayout from './components/AppFlexLayout.vue'
 const buttons = [
@@ -18,6 +20,7 @@ const buttons = [
 </script>
 
 <template>
+  <TheNav />
   <main>
     <header>
       <h1>Vue Components</h1>
@@ -38,6 +41,7 @@ const buttons = [
       </AppFlexLayout>
     </section>
   </main>
+  <TheFooter />
 </template>
 
 <style scoped>
